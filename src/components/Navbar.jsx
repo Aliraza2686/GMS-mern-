@@ -7,7 +7,7 @@ const Navbar = () => {
         initial={{x: '100vw', opacity : 0.5}}
         animate={{x: 0, opacity: 1}}
         transition={{delay : 0.1, type: 'tween', duration: 0.5}}
-         className='text-yellow-500 font-bold'>Jym Management System</motion.h1>
+         className='text-yellow-500 font-bold'>Gym Management System</motion.h1>
     </motion.div>
   )
 }

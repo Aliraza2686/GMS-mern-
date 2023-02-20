@@ -1,33 +1,48 @@
-import React from 'react'
-import {motion} from "framer-motion"
-import Navbar from '../components/Navbar'
+import { useNavigate } from "react-router-dom"
+import { motion } from "framer-motion"
+import HomeNav from '../components/HomeNav'
+import Jumbo from "../components/Jumbo"
+import Stars from "../components/Stars"
+import Max from "../components/Max"
+import Services from "../components/Services"
+import Trainings from "../components/Trainings"
+import Choosing from "../components/Choosing"
+import WhyCards from "../components/WhyCards"
+import Clients from "../components/Clients"
+import Waiting from "../components/Waiting"
 const Home = () => {
+   const navigate = useNavigate()
   return (
-    <div>
-      <Navbar />
-         <div className="card md:grid md:grid-cols-3 ">
-               <div></div>
-                 <motion.div
-                  initial={{opacity:  0.3}}
-                  animate={{opacity: 1}}
-                  transition={{delay : 0.2, type : 'tween', duration : 0.7}}
-                 className='form'>
-                      <div className="bg-white p-5 mt-20 rounded-md shadow-xl">
-                         <h1 className="text-center font-bold text-3xl text-cyan-700">Login</h1>
-                         <form>
-                            <label className='font-bold'>Email</label>
-                            <input type="email" name="" id="" className='bg-gray-300 w-full rounded-md px-2 h-10' placeholder='enter email' />
-                            <label  className='font-bold'>Password</label>
-                            <input type="password" name="" id="" className='bg-gray-300 w-full rounded-md px-2 h-10'placeholder='enter password' />
-                            <button className='w-full hover:bg-blue-500 h-10 rounded-md bg-cyan-800  font-bold text-white mt-3'>Login</button>
-                         </form>
-                      </div>
-                 </motion.div>
-               <div>
-
-               </div>
+     <div>
+      <motion.div className="main">
+         
+      <HomeNav />
+        <Jumbo />
+        <Stars />
+        <Max />
+        
+      </motion.div>
+         <div className="service md:p-5">
+           <Services />
+             <Trainings />
          </div>
-    </div>
+
+         <div className="choose">
+           <Choosing />
+           <WhyCards /> 
+         </div>
+
+         <div className="clients-section my-10">
+               <Clients />
+         </div>
+         <div className="waitings ">
+              <Waiting />
+         </div>
+
+         <div className="space mt-20">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quidem dolor maiores nostrum rem ad aut distinctio. Omnis eos nemo suscipit nobis voluptate esse quasi culpa autem in, ullam libero? Blanditiis nobis, corrupti officiis est excepturi quod amet, repudiandae itaque ex accusantium necessitatibus quis nemo vero. Quia culpa placeat hic.
+         </div>
+     </div>
   )
 }
 

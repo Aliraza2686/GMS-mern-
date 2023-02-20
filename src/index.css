@@ -1,7 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+#141125 */
 
-body {
-    background-color: #f2f2f2;
+.main {
+    height: 230vh;
+    width: 100%;
+    background-color: #0a071b;
 }
+.choose{
+    width: 100%;
+    background-color: #0a071b;
+    color: #fff;
+    height: 160vh;
+}
+.why-card {
+    background-color:#141125;
+}
+
+.waiting-card {
+    background-color: #0a071b;
+    height: 63vh;
+   
+}
+.waiting-left-side {
+
+    background-image: url("https://assets.website-files.com/60c1736aaad648491e964d73/60c1736aaad648ecb3964d84_Accent%20(Grey).svg");
+    background-repeat: no-repeat;
+}
+.waiting-right {
+    
+    background-image: url("https://assets.website-files.com/60c1736aaad648491e964d73/60c1736aaad6481e3b964d89_Hero%20Accent%20Large.svg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.why-btn {
+   
+    background-color:#141125;
+}
+@media(max-width : 600px) {
+    .main {
+        height: 340vh;
+    }
+    .choose {
+        height: 380vh;
+    }
+    .waiting-card {
+        height: 80vh;
+    }
+}
+
+.max-font {
+    font-style: italic;
+}
+
+.navLinks1{
+    background-color: #2a263f ;
+}
+
+.navLinks:hover {
+    background-color: #2a263f ;
+}
+
+.jumbo-left {
+    background-image: url("https://assets.website-files.com/60c1736aaad648491e964d73/60c1736aaad648ecb3964d84_Accent%20(Grey).svg");
+    background-repeat: no-repeat;
+}
+.ser {
+    background-image: url("https://assets.website-files.com/60c1736aaad648491e964d73/60c1736aaad648ecb3964d84_Accent%20(Grey).svg");
+    background-repeat: no-repeat;
+}
+.imgwrapper {
+    background-image: url("https://assets.website-files.com/60c1736aaad648491e964d73/60c1736aaad6481e3b964d89_Hero%20Accent%20Large.svg");
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bn {
+    border: 1px solid blueviolet;
+}
+
+.bn:hover {
+    background-color: blueviolet;
+    color: #fff;
+    transition: 0.5s ease-in;
+}
+
+@keyframes animateRight {
+    0% {
+        transform: translateX(80px);
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* #2a263f */
